@@ -36,7 +36,7 @@ def find_mismatch(text):
 
 def main():
     while True:
-        text = input("Ievadiet 'F', lai palaistu testu vai 'I',  lai ievaditu tekstu: ")
+        text = input("Ievadiet 'F', lai palaistu testu vai 'I',  lai ievadītu tekstu: ")
         if text == "F":
             fails = input("Ievadiet faila nosaukumu (0-5): ")
             faila_nos = "test/" + fails
@@ -53,7 +53,7 @@ def main():
             if len(teksts) == 0:
                 continue
             elif len(teksts) >= 100000:
-                print("Teksts ir " + str(len(teksts) - 100000) + " zimes par garu")
+                print("Teksts ir " + str(len(teksts) - 100000) + " zīmes par garu")
                 continue
             mismatch = find_mismatch(teksts)
             if mismatch == "Success":
@@ -66,7 +66,7 @@ def main():
             if len(teksts) == 0:
                 continue
             elif len(teksts) >= 100000:
-                print("Teksts ir " + str(len(teksts) - 100000) + " zimes par garu")
+                print("Teksts ir " + str(len(teksts) - 100000) + " zīmes par garu")
                 continue
             mismatch = find_mismatch(teksts)
             if mismatch == "Success":
